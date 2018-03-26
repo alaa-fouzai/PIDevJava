@@ -59,8 +59,8 @@ public class loginController implements Initializable {
         Cancel.addEventHandler(MouseEvent.MOUSE_CLICKED, x-> {
             System.out.println("cancel clicked");
           Stage stage = (Stage) Cancel.getScene().getWindow();
-    // do what you have to do
-    stage.close();
+            // do what you have to do
+            stage.close();
         
         
         });
@@ -136,7 +136,7 @@ public class loginController implements Initializable {
                 
                 try {
                     if (serviceUser.Autentifier(email.getText(), password.getText()))
-                    {
+                    {   
                         loginWindow.close();
                     }
                     else
